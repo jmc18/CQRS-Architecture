@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ardalis.Specification" Version="7.0.0" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
@@ -27,7 +28,6 @@
     <Folder Include="Features\Customer\Queries\GetCustommerById\" />
     <Folder Include="Models\" />
     <Folder Include="Filters\" />
-    <Folder Include="Interfaces\" />
     <Folder Include="Validations\" />
     <Folder Include="Profiles\" />
   </ItemGroup>
