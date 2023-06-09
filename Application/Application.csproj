@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ExtensionMethods\**" />
+    <EmbeddedResource Remove="ExtensionMethods\**" />
+    <None Remove="ExtensionMethods\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
@@ -15,15 +21,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Validations\" />
+    <Folder Include="Features\Customer\Commands\DeleteCustomerCommand\" />
+    <Folder Include="Features\Customer\Commands\UpdateCustomerCommand\" />
+    <Folder Include="Features\Customer\Queries\GetAllCustomers\" />
+    <Folder Include="Features\Customer\Queries\GetCustommerById\" />
     <Folder Include="Models\" />
-    <Folder Include="Exceptions\" />
-    <Folder Include="Features\" />
     <Folder Include="Filters\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="ExtensionMethods\" />
+    <Folder Include="Validations\" />
     <Folder Include="Profiles\" />
-    <Folder Include="Wrappers\" />
   </ItemGroup>
 
 </Project>
