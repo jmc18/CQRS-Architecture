@@ -19,9 +19,13 @@ public class Customer : AuditableEntity
     {
         get
         {
-            if(this._Age <= 0)
+            if (_Age <= 0)
                 _Age = new DateTime(DateTime.UtcNow.Subtract(DOB).Ticks).Year - 1;
             return this._Age;
+        }
+        set 
+        { 
+            this ._Age = value;
         }
     }
 }
