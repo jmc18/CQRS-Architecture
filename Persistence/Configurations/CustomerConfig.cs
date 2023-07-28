@@ -19,6 +19,8 @@ public class CustomerConfig : IEntityTypeConfiguration<Customer>
         builder.Property(_ => _.CreatedBy).HasMaxLength(30);
         builder.Property(_ => _.LastModifiedBy).HasMaxLength(30);
         builder.Property(_ => _.DOB).IsRequired();
+        builder.Property(_ => _.Password);
+        builder.Property(_ => _.PasswordKey);
     }
 }
 
