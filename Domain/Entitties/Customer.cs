@@ -21,11 +21,11 @@ public class Customer : AuditableEntity
         {
             if (_Age <= 0)
                 _Age = new DateTime(DateTime.UtcNow.Subtract(DOB).Ticks).Year - 1;
-            return this._Age;
+            return _Age;
         }
         set 
         { 
-            this ._Age = value;
+            _Age = value;
         }
     }
 }
